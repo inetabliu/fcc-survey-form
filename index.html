@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/main.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">Wes Anderson Survey</h1>
+            <p class="subtitle" id="description">Part of <a href="https://inetabliu.github.io/fcc-tribute-page" target="_blank" rel="noopener noreferrer">Accidentally Wes Anderson</a></p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Full Name</label>
+                <input class="form-control" type="text" placeholder="Bill Murray" required id="name">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email address</label>
+                <input class="form-control" type="email" placeholder="billmurray@yahoo.com" required name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Lucky number</label>
+                <input class="form-control" type="number" placeholder="666" min="6" max="666" id="number">
+            </div>
+            <div class="form-group">
+                <label for="movie" id="dropdown-label">Choose Wes Anderson Movie</label>
+                <select class="form-control" name="movie" id="dropdown">
+                    <option value="the-life-aquatic">The Life Aquatic</option>
+                    <option value="grand-budapest-hotel">Grand Budapest Hotel</option>
+                    <option value="fantastic-mr-fox">Fantastic Mr. Fox</option>
+                    <option value="rushmore">Rushmore</option>
+                    <option value="moonrise-kingdom">Moonrise Kingdom</option>
+                    <option value="isle-of-dogs">Isle Of Dogs</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="form-label">
+                    Does Margot Tenenbaum smoke?
+                </p>
+                <div>
+                    <input type="radio" name="margot" value="yes" checked id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="margot" value="no" id="no">
+                    <label for="no">No</label>
+                </div>
+                <div>
+                    <input type="radio" name="margot" value="secretly" id="secretly">
+                    <label for="secretly">Secretly</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p class="form-label">
+                    Items Steve Zissou should take on a expedition:
+                </p>
+                <div>
+                    <input type="checkbox" name="expedition" value="harpoon" checked id="harpoon">
+                    <label for="harpoon">Harpoon</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="expedition" value="swimsuit" id="swimsuit">
+                    <label for="swimsuit">Swimsuit</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="expedition" value="beanie" id="beanie">
+                    <label for="beanie">Beanie</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="expedition" value="dog" id="dog">
+                    <label for="dog">A three legged dog</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional comments</label>
+                <textarea class="form-control" name="comments" id="comments" cols="30" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="form-submit" type="submit" value="Off to Adventure" id="submit">
+            </div>
+        </form>
+    </main>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
